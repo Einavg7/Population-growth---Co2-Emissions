@@ -1,5 +1,5 @@
 #creating a map of world population growth
-pop_map <- read.csv("C:\\Users\\einav\\Desktop\\project\\original_data\\csv\\population.csv", header = T) 
+pop_map <- read.csv("csv\\population.csv", header = T) 
 
 #getting rid of unwanted columns and rows 
 pop_map = pop_map [-1:-2,]
@@ -30,7 +30,7 @@ map_pop = mapCountryData(mapped_data, nameColumnToPlot = "Pop.Growth",
 do.call( addMapLegend, c(map_pop, legendWidth=1, legendMar = 2))
 
 #creating a map of world co2 emission  growth rate
-co2_map <- read.csv('C:\\Users\\einav\\Desktop\\project\\original_data\\csv\\co2.csv', header = T) 
+co2_map <- read.csv('csv\\co2.csv', header = T) 
 
 #getting rid of unwanted columns and rows 
 co2_map = co2_map [-1:-2,]
@@ -62,7 +62,7 @@ map_co2 = mapCountryData(mapped_data2, nameColumnToPlot = "co2.Growth",
 do.call( addMapLegend, c(map_co2, legendWidth=1, legendMar = 2))
 
 #creating a map of world forest area decline rate
-forest_map <- read.csv("C:\\Users\\einav\\Desktop\\project\\original_data\\csv\\forestareasqkm.csv", header = T) 
+forest_map <- read.csv("csv\\forestareasqkm.csv", header = T) 
 
 #getting rid of unwanted columns and rows 
 forest_map = forest_map [-1:-2,]
@@ -104,7 +104,7 @@ library(ggplot2)
 
 #agriculture
 #read the agriculture csv file on r
-agriculture <- read.csv("C:\\Users\\einav\\Desktop\\project\\original_data\\csv\\agriculturesqm.csv")
+agriculture <- read.csv("csv\\agriculturesqm.csv")
 
 #getting rid of unwanted columns and rows 
 agriculture = agriculture [-1:-2,]
@@ -123,7 +123,7 @@ sum(is.na(agriculture))
 
 #population
 #read the population csv file on r
-population <- read.csv("C:\\Users\\einav\\Desktop\\project\\original_data\\csv\\population.csv")
+population <- read.csv("csv\\population.csv")
 
 #getting rid of unwanted columns and rows 
 population = population [-1:-2,]
@@ -142,7 +142,7 @@ sum(is.na(population))
 
 #co2
 #read the co2 csv file on r
-co2 <- read.csv('C:\\Users\\einav\\Desktop\\project\\original_data\\csv\\co2.csv')
+co2 <- read.csv('csv\\co2.csv')
 
 #getting rid of unwanted columns and rows 
 co2 = co2 [-1:-2,]
@@ -162,7 +162,7 @@ sum(is.na(co2))
 
 #forest_area
 #read the forestareasqkm csv file on r
-forestareasqkm = read.csv('C:\\Users\\einav\\Desktop\\project\\original_data\\csv\\forestareasqkm.csv')
+forestareasqkm = read.csv('csv\\forestareasqkm.csv')
 
 #getting rid of unwanted columns and rows 
 forestareasqkm = forestareasqkm [-1:-2,]
@@ -183,7 +183,7 @@ sum(is.na(forestareasqkm))
 
 #livestock
 #read the livestock csv file on r
-livestock = read.csv('C:\\Users\\einav\\Desktop\\project\\original_data\\csv\\livestockquan.csv')
+livestock = read.csv('csv\\livestockquan.csv')
 
 #removing unwanted columns and rows
 livestock = livestock[,c(-1, -3)]
@@ -214,7 +214,7 @@ livestock = setNames(livestock, c('Country_Name','live90', "live91", "live92",
 
 #temperature
 #read the temperatures csv file on r
-temperature <- read.csv("C:\\Users\\einav\\Desktop\\project\\original_data\\csv\\GlobalLandTemperaturesByCountry.csv")
+temperature <- read.csv("csv\\GlobalLandTemperaturesByCountry.csv")
 
 #remove unwanted data
 temperature = temperature[,-3]
@@ -424,7 +424,7 @@ rm(years, subject)
 filter(means, subject == 'temp')%>%
   ggplot(aes(years, means), colour = 'grey50') +
   geom_line(colour = "red3", lwd = 2) +
-  labs(x = 'Years', y = 'Temperature Means (c°)', title = 'Mean Temperatures by Country')+
+  labs(x = 'Years', y = 'Temperature Means (cÂ°)', title = 'Mean Temperatures by Country')+
   theme(plot.title = element_text(size = 15,
                                   face = 'bold',
                                   hjust = 0.5,
