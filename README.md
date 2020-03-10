@@ -1,4 +1,4 @@
-# Population-growth---Co2-Emissions
+# Population-growth_Co2-Emissions
 
 R data science project - the connection between population growth and Co2 emissions and additional contributing factors. 
 In addition the differences between developed and undeveloped countries were examined.
