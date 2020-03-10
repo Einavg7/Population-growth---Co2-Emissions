@@ -5,6 +5,6 @@ In addition the differences between developed and undeveloped countries were exa
 
 data sources:
 
-1. The World Bank - https://www.worldbank.org/
-2. Food and Agriculture Organization of the United Nations - http://www.fao.org/home/en/
-3. Berkeley Earth - http://berkeleyearth.org/
+* The World Bank - https://www.worldbank.org/
+* Food and Agriculture Organization of the United Nations - http://www.fao.org/home/en/
+* Berkeley Earth - http://berkeleyearth.org/
