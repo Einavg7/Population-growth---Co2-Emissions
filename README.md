@@ -1,9 +1,9 @@
-# Population growth and Co2 Emissions
+# Population growth and CO<sub>2</sub> Emissions
 
-R data science project - the connection between population growth and Co2 emissions and additional contributing factors between 1990-2012. 
+R data science project - the connection between population growth and CO<sub>2</sub> emissions and additional contributing factors between 1990-2012. 
 In addition the differences between developed and undeveloped countries were examined.
 
-data sources:
+## data sources:
 
 * The World Bank - https://www.worldbank.org/
 * Food and Agriculture Organization of the United Nations - http://www.fao.org/home/en/
